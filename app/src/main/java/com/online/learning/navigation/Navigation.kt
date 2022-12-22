@@ -11,7 +11,7 @@ import com.online.learning.features.splash.OnBoardingScreen
 @Composable
 fun AppNavigator() {
     val navController = rememberAnimatedNavController()
-    BaseAppNavHost(navController = navController, startDestination = Screens.HOME.route) {
+    BaseAppNavHost(navController = navController, startDestination = Screens.SPLASH.route) {
         composable(Screens.SPLASH.route) {
             OnBoardingScreen(navController) {
                 navController.navigate(Screens.HOME.route)
